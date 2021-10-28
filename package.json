@@ -1,0 +1,22 @@
+{
+  "name": "cucumber-javascript",
+  "version": "1.0.0",
+  "description": "Cucumber JavaScript example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirbycope/cucumber-javascript.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirbycope/cucumber-javascript/issues"
+  },
+  "homepage": "https://github.com/kirbycope/cucumber-javascript#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^8.0.0-rc.1"
+  }
+}
