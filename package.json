@@ -4,8 +4,8 @@
   "description": "Cucumber JavaScript example.",
   "main": "index.js",
   "scripts": {
-    "appium": "./node_modules/.bin/cucumber-js ./node_modules/.bin/cucumber-js ./appium-webdriver/features",
-    "selenium": "./node_modules/.bin/cucumber-js ./node_modules/.bin/cucumber-js ./selenium-webdriver/features"
+    "appium": "./node_modules/.bin/cucumber-js ./appium-webdriver/features",
+    "selenium": "./node_modules/.bin/cucumber-js ./selenium-webdriver/features"
   },
   "repository": {
     "type": "git",
