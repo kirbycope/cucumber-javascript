@@ -1,16 +1,14 @@
 var { After, Before } = require('@cucumber/cucumber');
 require('chromedriver');
 var webdriver = require('selenium-webdriver');
-const testData = require("../../../test-data");
-
-var driver;
+var { driver } = require("../../../test-data");
 
 // This runs before each scenario
 Before(function () {
     driver = new webdriver.Builder()
         .forBrowser('chrome')
         .build();
-        driver.manage().window().maximize();
+    driver.manage().window().maximize();
 });
 
 // This runs after each scenario
