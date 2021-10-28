@@ -4,7 +4,7 @@
   "description": "Cucumber JavaScript example.",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "./node_modules/.bin/cucumber-js ./node_modules/.bin/cucumber-js ./selenium-webdriver/features"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/kirbycope/cucumber-javascript#readme",
   "devDependencies": {
-    "@cucumber/cucumber": "^8.0.0-rc.1"
+    "@cucumber/cucumber": "^8.0.0-rc.1",
+    "chromedriver": "^95.0.0",
+    "dotenv": "^10.0.0",
+    "selenium-webdriver": "^4.0.0"
   }
 }
