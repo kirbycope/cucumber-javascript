@@ -5,12 +5,14 @@ module.exports = {
 
     /** The `editText` with the placeholder 'Enter a messsage'. */
     editTextEnterAMessage: async function() {
-        return await driver.findElement(By.id('editTextTextPersonName'));
+        //return await driver.findElement(By.id('editTextTextPersonName'));
+        return await driver.findElement(By.id('com.example.myfirstapp:id/editTextTextPersonName'));
     },
 
     /** The The 'SEND' `button`. */
     buttonSend: async function() {
-        return await driver.findElement(By.id('button'));
+        //return await driver.findElement(By.id('button'));
+        return await driver.findElement(By.id('com.example.myfirstapp:id/button'));
     },
 
     /** Opens `this` page. */
