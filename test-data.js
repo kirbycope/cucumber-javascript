@@ -1,7 +1,9 @@
 require('dotenv').config()
 
-const baseUrl = process.env.TEST_BASE_URL;
-const testUser = process.env.TEST_USER;
-const testPass = process.env.TEST_PASS;
+global.baseUrl = process.env.TEST_BASE_URL;
+global.testUser = process.env.TEST_USER;
+global.testPass = process.env.TEST_PASS;
 
-var driver = null;
+global.driver = null;
+global.timeStart = null;
+global.timeEnd = null;
