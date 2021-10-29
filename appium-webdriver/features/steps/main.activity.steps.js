@@ -1,5 +1,5 @@
 const { Given, When, Then } = require("@cucumber/cucumber");
-var mainActivity = require("../activities/main.activity");
+let mainActivity = require("../activities/main.activity");
 
 // Given I am on the main activity
 Given("I am on the main activity", async function () {
