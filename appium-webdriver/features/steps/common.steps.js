@@ -1,19 +1,23 @@
 const { After, Before, Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const assert = require("assert").strict;
+const Appium = require("appium");
 const webdriver = require('selenium-webdriver');
 const appiumJson = require('../../../appium.json');
 require('../../../test-data');
-setDefaultTimeout(30*1000);
+setDefaultTimeout(30 * 1000);
 
 /** This runs before each scenario. */
 Before(async function () {
     timeStart = new Date();
+    let args = { port: "4723", host: "0.0.0.0", "log level": "error" };
+    server = await Appium.main(args);
     await startSession();
 });
 
 /** This runs after each scenario. */
 After(async function () {
     await driver.quit();
+    await server.close();
     timeEnd = new Date();
     let timeDiff = (timeEnd - timeStart) / 1000;
     console.log("\n" + '\033[94m' + "  Total Test Time: " + timeDiff + '\033[0m');
