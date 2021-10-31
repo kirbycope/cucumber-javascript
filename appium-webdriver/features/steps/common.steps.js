@@ -9,7 +9,7 @@ setDefaultTimeout(30 * 1000);
 /** This runs before each scenario. */
 Before(async function () {
     timeStart = new Date();
-    let args = { port: "4723", host: "0.0.0.0", "log level": "error" };
+    let args = { port: "4723", host: "0.0.0.0" };
     server = await Appium.main(args);
     await startSession();
 });
