@@ -36,6 +36,6 @@ async function startSession() {
 
 // Then I should see a message saying <message>
 Then(/^I should see a message saying (.*)$/, async function (message) {
-    let element = await driver.findElement(webdriver.By.xpath('//*[contains(text(),"' + message + '")]'));
+    let element = await driver.findElement(webdriver.By.xpath('//*[contains(@text,"' + message + '")]'));
     assert(await element.isDisplayed);
 });
