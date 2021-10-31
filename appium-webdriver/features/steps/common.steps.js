@@ -1,7 +1,7 @@
 const { After, Before, Given, When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const assert = require("assert").strict;
 const webdriver = require('selenium-webdriver');
-const appiumJson = require('../../../appium.json')
+const appiumJson = require('../../../appium.json');
 require('../../../test-data');
 setDefaultTimeout(30*1000);
 
@@ -36,6 +36,6 @@ async function startSession() {
 
 // Then I should see a message saying <message>
 Then(/^I should see a message saying (.*)$/, async function (message) {
-    //let element = await driver.findElement(webdriver.By.xpath('//*[contains(text(),"' + message + '")]'));
-    //assert(await element.isDisplayed);
+    let element = await driver.findElement(webdriver.By.xpath('//*[contains(text(),"' + message + '")]'));
+    assert(await element.isDisplayed);
 });

@@ -1,6 +1,6 @@
 const { By } = require("selenium-webdriver");
 
-/**URL looks like: {baseURL}/login */
+/** MainActivity.kt */
 module.exports = {
 
     /** The `editText` with the placeholder 'Enter a messsage'. */
