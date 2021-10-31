@@ -15,8 +15,6 @@
 
 ## Getting Started
 1. Install [NodeJS](https://nodejs.org/en/) LTS
-1. [Mobile] Install [Appium Server](https://github.com/appium/appium-desktop/releases/latest)
-   * [Optional] Install [Appium Inspector](https://github.com/appium/appium-inspector/releases/latest)
 1. [Android] Install [Android Studio](https://developer.android.com/studio) and [create an AVD](https://developer.android.com/studio/run/managing-avds)
 1. Clone this repo
 1. Open the root folder using [VS Code](https://code.visualstudio.com/)
@@ -39,14 +37,16 @@
 Example tests use https://developer.android.com/training/basics/firstapp </br>
 The [apk](/app-debug.apk) is included as part of _this_ sample repo.
 
-   * In the integrated terminal run `npm run appium`
+With the [AVD](https://developer.android.com/studio/run/emulator-commandline) running:
+   1. In the integrated terminal run `npm run appium`
 
 ### Selenium (Web Apps)
 [Selenium](https://selenium.dev) is an open-source automated testing framework for web applications. </br>
 [WDIO](https://webdriver.io/) is a Next-gen browser and mobile automation test framework for Node.js. </br>
 Example tests use https://the-internet.herokuapp.com/login
 
-   * In the integrated terminal run `npm run selenium`
+With the [AVD](https://developer.android.com/studio/run/emulator-commandline) running:
+   *  In the integrated terminal run `npm run selenium`
 
 ## JavaScript Tips and Tricks
 
